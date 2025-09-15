@@ -13,14 +13,24 @@
 package edu.bhscs;
 
 class Main {
-    public static void main(String[] args) {
-      System.out.println("-----------------");
-      System.out.println("!!!! PROGRAM START !!!!");
-      System.out.println("hello world");
-      System.out.println("hello");
-      System.out.println("!!!! PROGRAM END !!!!");
-      System.out.println("-----------------");
+  public static final char A = 'a';
+
+  public static void main(String[] args){
+
+    int someNumber = 67;
+
+    System.out.println("67!" + A + someNumber);
+    System.out.println(A + "?" + A + someNumber);
+    System.out.println(A + A + someNumber);
+    System.out.println("this is neet");
+    System.out.println();
+    System.out.println();
+    System.out.println("OK I am done");
 
 
-    }
+
+
+
+  }
+
 }
