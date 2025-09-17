@@ -32,10 +32,10 @@ class Main {
     Awesome linda = new Awesome("L");
     Awesome jhon = new Awesome("with a JH, dumb-ass");
 
-    System.out.println( steve.getName("Steve") );
-    System.out.println( sue.getName("Sue") );
-    System.out.println( linda.getName("L") );
-    System.out.println( jhon.getName("with a JH, dumb-ass") );
+    System.out.println( steve.getName() );
+    System.out.println( sue.getName() );
+    System.out.println( linda.getName() );
+    System.out.println( jhon.getName() );
 
   }
 
