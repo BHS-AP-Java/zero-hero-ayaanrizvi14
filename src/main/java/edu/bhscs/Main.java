@@ -1,45 +1,67 @@
 // Ayaan Rizvi
 // P2
 // Zero-Hero
-// 9/12/2025
+// 9/19/2025
 
 /*
- * DESCRIPTION: Whatever Mr Reiber says
- * INPUT: We don't know about input yet
- * OUTPUT: Some cool words in the command line thing
- * EDGE CASE: They are all edge cases at the moment
+ * DESCRIPTION: This is a cake sale where there is a baker, customer, and PTSA
+ * INPUT: I make objects like a cake, baker, customer, and PTSA
+ * OUTPUT: A message which shows the creation of the cake, buying it, eating it, and the PTSA funds
+ * EDGE CASE: The weight of the cake decreases over  the time because it is getting eaten. Also the customer may not have enough money
+ */
+
+/*
+ * VOCABULARY:
+ * Constructor:  A special method that is called when an object is instantiated
+ * Class: A blueprint for creating objects
+ * Object: An instance of a class
+ * Method: A function that is defined inside a class
  */
 
 package edu.bhscs;
 
-class Main {
+public class Main {
 
-  // This is an example of a char content
-  // Because it is global, it should be in capital letters
-  public static final float NAME_OF_THIS_FLOAT = 69.42f;
-  public static final char A = 'a';
+// This is an example of a char content
+// Because it is global, it should be in capital letters
+public static void main(String[]args){
 
-  public static void main(String[] args) {
 
-    System.out.println(A);
-    String myString = pushup("Garlic");
-    System.out.println(myString);
-    System.out.println(myString);
-    System.out.println(myString);
+// This is where I create a Cake object along with its flavor/ingrediet and person
+Cake cake = new Cake("chocolate","ayaan");cake.addIngredient("vanilla");cake.showIngredients();
 
-    Awesome steve = new Awesome("Steve");
-    Awesome sue = new Awesome("Sue");
-    Awesome linda = new Awesome("L");
-    Awesome jhon = new Awesome("with a JH, dumb-ass");
 
-    System.out.println( steve.getName() );
-    System.out.println( sue.getName() );
-    System.out.println( linda.getName() );
-    System.out.println( jhon.getName() );
+// Static method
+String myString = pushup("Garlic");System.out.println(myString);
 
-  }
 
-  public static String pushup(String food){
-    return "sweat" + food;
+// Make the baker and bake the cake
+Baker myBaker=new Baker();myBaker.bakeCake();
+
+
+String theGoodStuff="chocolate";new Cake(theGoodStuff,theGoodStuff);
+
+
+Cake theOneBestCake=new Cake(theGoodStuff,"ayaan");theOneBestCake.ingredient=theGoodStuff;
+
+
+// Make the customer and PTSA
+Customer customer=new Customer("Ayaan",50);PTSA ptsa=new PTSA();
+
+
+// The customr buys the cake for a bargain of 10 bucks!
+customer.buyCake(theOneBestCake,ptsa,10);
+
+
+// Cake is getting eaten and losing weight
+theOneBestCake.eaten();System.out.println("The cake weight after some bites of it is: "+theOneBestCake.getWeight());
+
+
+theOneBestCake.eaten();System.out.println("The cake weight after some more bites of it is: "+theOneBestCake.getWeight());
+System.out.println("The PTSA funds after the cake sale is: "+ptsa.getFunds());
+}
+
+  public static String pushup(String s){
+    return s;
   }
 }
