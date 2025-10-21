@@ -1,13 +1,46 @@
 package edu.bhscs;
 
 public class Baker {
-  // This is a constructor
-  public Baker() {
-    System.out.println("Baker created");
+  // PROPERTIES AND FIELDS
+  Player p;
+  Flour f;
+  Store placeOfWork;
+  int skill;
+  int cash;
+
+  // CONSTRUCTOR
+  Baker(Player p) {
+    this.p = p;
   }
 
-  public Cake bakeCake() {
+  // METHODS
+  void takeOrder(int price, Customer c) {
+    cash += c.pay(price);
+    c.takeCake(bakeCake());
+  }
 
-    return new Cake("Chocolate", "Ayaan");
+  public void learn(int amount){
+    this.skill += amount;
+    //Make the baker skill level effect the quality of the cake
+    //Make a bad baker make bad cakes
+    //Make a good baker make good cakes
+    //Make a great baker make great cakes
+    //Make a master baker make masterful cakes
+    this.p.accomplish(amount);
+
+  }
+  Cake bakeCake() {
+    String answer = this.p.giveAnswer("what cake do you you want?");
+    this.skill ++;
+    return new Cake(answer, this.f);
+  }
+
+  void takeJob(Store bakery) {
+    String doYouWantToWorkHere = this.p.giveAnswer("Do you want to work at " + bakery.getName());
+    if (doYouWantToWorkHere.equals("y")) {
+      this.placeOfWork = bakery;
+      System.out.println(this.name + " now works at " + bakery.getName());
+    }
+  public Baker(){
   }
 }

@@ -11,13 +11,18 @@ public class Customer {
     System.out.println("Customer created: " + name + " with $" + money);
   }
 
-  public void buyCake(Cake cake, PTSA ptsa, int price) {
+  public int pay(int price) {
     if (this.money >= price) {
       this.money -= price;
-      ptsa.addFunds(price);
-      System.out.println(this.name + " bought the cake for $" + price);
+      System.out.println(this.name + " paid $" + price + ". Remaining money: $" + this.money);
+      return price;
     } else {
-      System.out.println(this.name + " does not have enough money to buy the cake.");
+      System.out.println(this.name + " does not have enough money to pay $" + price);
+      return 0;
     }
+  }
+
+  public void takeCake(Cake cake) {
+    System.out.println(this.name + " received the cake with ingredient: " + cake.ingredient);
   }
 }

@@ -21,47 +21,64 @@
 package edu.bhscs;
 
 public class Main {
+  public static void main(String[] args) {
 
-// This is an example of a char content
-// Because it is global, it should be in capital letters
-public static void main(String[]args){
+    new Cake("=========x==========", 5, 12).draw(null, 0, 0);
 
+    System.out.println();
+    System.out.println("Hello hello");
+    System.out.println();
+  }
 
-// This is where I create a Cake object along with its flavor/ingrediet and person
-Cake cake = new Cake("chocolate","ayaan");cake.addIngredient("vanilla");cake.showIngredients();
-
-
-// Static method
-String myString = pushup("Garlic");System.out.println(myString);
-
-
-// Make the baker and bake the cake
-Baker myBaker=new Baker();myBaker.bakeCake();
-
-
-String theGoodStuff="chocolate";new Cake(theGoodStuff,theGoodStuff);
-
-
-Cake theOneBestCake=new Cake(theGoodStuff,"ayaan");theOneBestCake.ingredient=theGoodStuff;
-
-
-// Make the customer and PTSA
-Customer customer=new Customer("Ayaan",50);PTSA ptsa=new PTSA();
-
-
-// The customr buys the cake for a bargain of 10 bucks!
-customer.buyCake(theOneBestCake,ptsa,10);
-
-
-// Cake is getting eaten and losing weight
-theOneBestCake.eaten();System.out.println("The cake weight after some bites of it is: "+theOneBestCake.getWeight());
-
-
-theOneBestCake.eaten();System.out.println("The cake weight after some more bites of it is: "+theOneBestCake.getWeight());
-System.out.println("The PTSA funds after the cake sale is: "+ptsa.getFunds());
+  // This is an example of a char content
+  // Because it is global, it should be in capital letters
 }
 
-  public static String pushup(String s){
+
+
+
+    // This is where I create a Cake object along with its flavor/ingrediet and person
+    /*Cake cake = new Cake("vanilla", "flour");
+    cake.addIngredient("vanilla");
+    cake.showIngredients();
+
+    // Static method
+    String myString = pushup("Garlic");
+    System.out.println(myString);
+
+    // Make the baker and bake the cake
+    Baker myBaker = new Baker();
+    myBaker.bakeCake();
+
+    Cake theOneBestCake = new Cake("chocolate", new Flour("the purpose of all"));
+    theOneBestCake.ingredient = "chocolate";
+
+    // Make the customer and PTSA
+    Customer customer = new Customer("Ayaan", 50);
+    PTSA ptsa = new PTSA();
+
+    // The customr buys the cake for a bargain of 10 bucks!
+    customer.buyCake(theOneBestCake, ptsa, 10);
+
+    // Cake is getting eaten and losing weight
+    theOneBestCake.eaten();
+    System.out.println("The cake weight after some bites of it is: " + theOneBestCake.getWeight());
+
+    theOneBestCake.eaten();
+    System.out.println(
+        "The cake weight after some more bites of it is: " + theOneBestCake.getWeight());
+    System.out.println("The PTSA funds after the cake sale is: " + ptsa.getFunds());
+  }
+
+  public static String pushup(String s) {
     return s;
   }
+
+  public void draw() {
+    System.out.println("~~~~~~~~");
+    System.out.println("--------");
+    System.out.println("========");
+    System.out.println("~~~~~~~~");
+  }
 }
+*/
