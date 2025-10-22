@@ -16,10 +16,6 @@ public class Cake {
 
 //CONSTRUCTOR
   public Cake(){
-    this.height = 3;
-    this.width = 20;
-    this.layers = 2;
-    this.icing = "*";
 
   }
   public Cake(String icing, int height, int width, int layers) {
@@ -60,7 +56,7 @@ public class Cake {
 }
 
 public static void main(String[] args) {
-  Cake myCake = new Cake("~", 5, 20, 2);
+  Cake myCake = new Cake("~", 5, 20, 3);
   myCake.draw();
 }
 
