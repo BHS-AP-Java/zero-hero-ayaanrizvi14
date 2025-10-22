@@ -3,6 +3,7 @@ package edu.bhscs;
 public class Customer {
   String name;
   int money;
+  String ingredient;
 
   public Customer(String name, int money) {
 

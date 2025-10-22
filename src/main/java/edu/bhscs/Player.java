@@ -2,6 +2,7 @@ package edu.bhscs;
 
 import java.util.Scanner;
 
+// * */
 public class Player {
 
   private String name;
@@ -29,3 +30,5 @@ public class Player {
     return s.nextLine();
   }
 }
+
+//

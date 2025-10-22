@@ -34,8 +34,9 @@ public class Cake {
   void draw(){
     // Top if icing layer
     System.out.println(icing.repeat(width));
-    for (int l = 0; l < layers; l++) {
     // This is a loop for each layer
+    for (int l = 0; l < layers; l++) {
+      //drawing columns for this layer
       for(int i = 0; i < height; i++) {
         //drawing rows for this layer
         for (int j = 0; j < width; j++){

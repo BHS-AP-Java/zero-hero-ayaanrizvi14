@@ -23,7 +23,7 @@ package edu.bhscs;
 public class Main {
   public static void main(String[] args) {
 
-    new Cake("=========x==========", 5, 12).draw(null, 0, 0);
+    new Cake("=========x==========", 5, 12);
 
     System.out.println();
     System.out.println("Hello hello");
