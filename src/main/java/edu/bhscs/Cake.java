@@ -124,6 +124,10 @@ public static void main(String[] args) {
   public String getType() {
     return this.ingredient1;
   }
+  public void draw(Table t) {
+    this.draw();
+    t.draw();
+  }
 }
 
 //*
