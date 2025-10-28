@@ -126,7 +126,6 @@ public static void main(String[] args) {
   }
   public void draw(Table t) {
     this.draw();
-    t.draw();
   }
 }
 

@@ -13,8 +13,8 @@ int width;
 public Table(int legs, int width) {
   this.legs = legs;
   this.width = width;
+  System.out.println("TABLE IS ALIVEEEE");
 }
-System.out.println("TABLE IS ALIVEEEE");
 
 
   // Methods

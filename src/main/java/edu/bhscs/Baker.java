@@ -8,6 +8,8 @@ public class Baker {
   Store placeOfWork;
   int skill;
   int cash;
+  int bakes;
+
 
   // CONSTRUCTOR
   public Baker(String name){
@@ -46,5 +48,8 @@ public class Baker {
       System.out.println(this.name + " now works at " + bakery.getName());
     }
   public Baker(){
+  }
+  Cake bakes(int size, String Who){
+    return new Cake();
   }
 }
