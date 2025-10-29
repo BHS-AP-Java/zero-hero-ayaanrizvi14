@@ -4,6 +4,9 @@ public class Mayor {
   // PROPERTIES AND FIELDS
   Player user;
   String name;
+  int power;
+  baker b;
+
 
   // CONSTRUCTOR
   public Mayor() {
@@ -21,6 +24,7 @@ public class Mayor {
 
   // METHODS
   public boolean approvedStore(Store store, baker b) {
+
     if (b.getSkill() > 5) return true;
     return false;
   }
