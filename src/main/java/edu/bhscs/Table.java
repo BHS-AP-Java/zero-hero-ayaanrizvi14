@@ -4,8 +4,8 @@ public class Table {
   // Properties and fields
   int legs;
   int width;
-  String legChar = "|";
-  String topChar = "-";
+  String legChar = "|";  // the specific charector that depicts the legs
+  String topChar = "-";  // the specific charector that depicts the top of the table
 
   // Constructor
   public Table(int legs, int width) {
@@ -21,6 +21,14 @@ public class Table {
   public void setTop(String top) {
     this.topChar = top;
   }
+
+  // here is where I will create the top of the table
+
+  // Here is where I will create the legs of the table
+  
+  // need loops for both of these
+
+
 
   // Methods
 }
