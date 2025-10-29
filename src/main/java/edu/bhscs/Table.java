@@ -10,18 +10,14 @@
  * Edge Case: I dont think there are any but maybe having to deal with the fencepost problem
  */
 
-
-
-
-
 package edu.bhscs;
 
 public class Table {
   // Properties and fields
   int legs;
   int width;
-  String legChar = "|";  // the specific charector that depicts the legs
-  String topChar = "-";  // the specific charector that depicts the top of the table
+  String legChar = "|"; // the specific charector that depicts the legs
+  String widthChar = "-"; // the specific charector that depicts the top of the table
 
   // Constructor
   public Table(int legs, int width) {
@@ -32,19 +28,30 @@ public class Table {
 
   public void setLegs(String legs) {
     this.legChar = legs;
-
   }
-  public void setTop(String top) {
-    this.topChar = top;
+
+  public void setTop(String theWidth) {
+    this.widthChar = theWidth;
   }
 
   // here is where I will create the top of the table
+  public void drawTop() {
+    for (int i = 0; i < width; i++) {
+      System.out.print(widthChar);
+    }
+    System.out.println();
+  }
 
   // Here is where I will create the legs of the table
+  public void drawLegs() {
+    for int(i = 0; i < legs; i++) {
+      System.out.print(legChar);
+
+
+    }
+  }
 
   // need loops for both of these
-
-
 
   // Methods
 }

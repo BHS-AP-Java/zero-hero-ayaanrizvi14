@@ -16,7 +16,7 @@ public class Burger {
   String type;
   int weight;
   int price;
-  
+
 
 
 
@@ -25,15 +25,12 @@ public class Burger {
     this.type = type;
 
   }
-  public static void breadGuts(int width){
-    }
-    return guts;
 
   // METHODS
 
   public static void draw() {
     for (int i = 0; i < 10; i++) {
-      System.out.println("    // " + breadGuts(10) + " \\");
+      System.out.println("-------");
     }
  }
 }
