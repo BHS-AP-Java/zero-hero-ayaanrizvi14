@@ -1,7 +1,7 @@
 /* 
 package edu.bhscs;
 
-public class Mayor {
+/*public class Mayor {
   // PROPERTIES AND FIELDS
   Player user;
   String name;

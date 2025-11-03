@@ -51,9 +51,14 @@ public class Table {
     }
   }
 
-  public void draw() {
+  public int gedWidth(){
+    return width;
 
+  }
 
+  public void setOffset(int offset) {
+    System.out.println("offset = " + offset);
+  }
   // need loops for both of these
 
   // Methods

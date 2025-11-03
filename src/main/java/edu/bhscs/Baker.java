@@ -21,6 +21,10 @@ public class Baker {
     this.p = p;
   }
 
+  public Baker() {
+
+  }
+
   // METHODS
   void takeOrder(int price, Customer c) {
     cash += c.pay(price);
@@ -49,13 +53,8 @@ public class Baker {
       this.placeOfWork = bakery;
       System.out.println(this.name + " now works at " + bakery.getName());
     }
-  private String giveAnswer(String string) {
-    return string;
-
   }
-  public Baker(){
-  }
-  Cake bakes(int size, String Who){
-    return new Cake();
+  Cake bakes(int size, String who){
+    return new Cake(size, who);
   }
 }
