@@ -44,7 +44,7 @@ public class Table {
 
   // Here is where I will create the legs of the table
   public void drawLegs() {
-    for int(i = 0; i < legs; i++) {
+    for (int i = 0; i < legs; i++) {
       System.out.print(legChar);
 
 

@@ -14,6 +14,16 @@ public class Cake {
   int width;  // How many characters per row
   int layers; // Stacks of layers
 
+void centerlength(Table t){
+  int cakeWidth;
+  int tableWidth;
+  int offset;
+  int tableOffset;
+  int cakeOffset;
+}
+
+
+
 //CONSTRUCTOR
   public Cake(){
 
@@ -60,7 +70,6 @@ public static void main(String[] args) {
   myCake.draw();
 }
 
-int offset = (myCake.getWidth() - myTable.getWidth()) / 2;
 
 if(offset < 0) { /* do the right thing when myTable is bigger */ }
 else { /* do the right thing when the cake is bigger  */ }
