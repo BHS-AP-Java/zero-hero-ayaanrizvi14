@@ -3,7 +3,7 @@ package edu.bhscs;
 public class Customer {
   String name;
   int money;
-  String ingredient;
+  int ingredient;
 
   public Customer(String name, int money) {
 
@@ -24,6 +24,6 @@ public class Customer {
   }
 
   public void takeCake(Cake cake) {
-    System.out.println(this.name + " received the cake with ingredient: " + cake.ingredient);
+    System.out.println(this.name + " received the cake with ingredient: ");
   }
 }

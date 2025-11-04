@@ -1,3 +1,4 @@
+/* 
 package edu.bhscs;
 
 public class Mayor {
@@ -29,3 +30,4 @@ public class Mayor {
     return false;
   }
 }
+*/
