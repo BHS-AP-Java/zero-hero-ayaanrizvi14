@@ -16,8 +16,8 @@ public class Table {
   // Properties and fields
   int legs;
   int width;
-  String legChar = "|"; // the specific charector that depicts the legs
-  String widthChar = "-"; // the specific charector that depicts the top of the table
+  String leg;
+  String theWidth;
 
   // Constructor
   public Table(int legs, int width) {
@@ -27,17 +27,17 @@ public class Table {
   }
 
   public void setLegs(String legs) {
-    this.legChar = legs;
+    this.leg = legs;
   }
 
-  public void setTop(String theWidth) {
-    this.widthChar = theWidth;
+  public void setWidth(String theWidth) {
+    this.width = theWidth;
   }
 
   // here is where I will create the top of the table
   public void drawTop() {
     for (int i = 0; i < width; i++) {
-      System.out.print(widthChar);
+      System.out.print(width);
     }
     System.out.println();
   }
@@ -45,7 +45,7 @@ public class Table {
   // Here is where I will create the legs of the table
   public void drawLegs() {
     for (int i = 0; i < legs; i++) {
-      System.out.print(legChar);
+      System.out.print(leg);
 
 
     }

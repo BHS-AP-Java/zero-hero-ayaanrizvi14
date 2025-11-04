@@ -14,12 +14,27 @@ public class Cake {
   int width;  // How many characters per row
   int layers; // Stacks of layers
 
-void centerlength(Table t){
-  int cakeWidth;
-  int tableWidth;
-  int offset;
-  int tableOffset;
-  int cakeOffset;
+void centerlength(int tableWidth){
+  int cakeWidth = this.width;
+  int offset = (cakeWidth - tableWidth) / 2;
+  int tableOffset = 0;
+  int cakeOffset = 0;
+
+  if(cakeWidth < tableWidth){
+    tableOffset = 0;
+    cakeOffset = Math.abs(offset);
+  }else{
+    cakeOffset = 0;
+    tableOffset = Math.abs(offset);
+    }
+
+}
+
+public void draw(Table t){
+
+
+  this.draw();
+  t.draw();
 }
 
 
@@ -39,7 +54,7 @@ void centerlength(Table t){
 // METHOD
   void draw(){
     // Top if icing layer
-    System.out.println(icing.repeat(width));
+    System.out.println("");
     // This is a loop for each layer
     for (int l = 0; l < layers; l++) {
       //drawing columns for this layer
@@ -63,47 +78,15 @@ void centerlength(Table t){
     System.out.println("=".repeat(width));
 
   }
+
+
+
+
+
+
+
 }
 
-public static void main(String[] args) {
-  Cake myCake = new Cake("~", 5, 20, 3);
-  myCake.draw();
-}
-
-
-if(offset < 0) { /* do the right thing when myTable is bigger */ }
-else { /* do the right thing when the cake is bigger  */ }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//* */
 
   public Cake(String ingredient, Flour flour) {
     System.out.println(
@@ -138,9 +121,8 @@ else { /* do the right thing when the cake is bigger  */ }
   public String getType() {
     return this.ingredient1;
   }
-  public void draw(Table t) {
-    this.draw();
-  }
-}
+
+  // removed duplicate draw(Table) to avoid duplicate method definition;
+  // use the other draw(Table) implementation above which calls t.draw().
 
 //*

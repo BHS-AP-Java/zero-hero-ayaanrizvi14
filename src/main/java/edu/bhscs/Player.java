@@ -27,7 +27,7 @@ public class Player {
 
   public String giveAnswer(String question) {
     System.out.println(question);
-    return s.nextLine();
+    return;
   }
 }
 

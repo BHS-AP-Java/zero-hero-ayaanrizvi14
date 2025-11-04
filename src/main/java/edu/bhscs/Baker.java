@@ -42,7 +42,7 @@ public class Baker {
   }
 
   void takeJob(Store bakery) {
-    String doYouWantToWorkHere = this.p.giveAnswer("Do you want to work at " + bakery.getName());
+    String doYouWantToWorkHere = this.giveAnswer("Do you want to work at " + bakery.getName());
     if (doYouWantToWorkHere.equals("y")) {
       this.placeOfWork = bakery;
       System.out.println(this.name + " now works at " + bakery.getName());
