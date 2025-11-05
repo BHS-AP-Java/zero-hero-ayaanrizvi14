@@ -45,15 +45,18 @@ public class Table {
   // Here is where I will create the legs of the table
   public void drawLegs() {
     for (int i = 0; i < legs; i++) {
+<<<<<<< HEAD
       System.out.print(leg);
 
 
+=======
+      System.out.print(legChar);
+>>>>>>> 7bf7eb8 (Testing)
     }
   }
 
-  public int gedWidth(){
+  public int gedWidth() {
     return width;
-
   }
 
   public void setOffset(int offset) {

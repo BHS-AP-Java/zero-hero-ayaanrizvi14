@@ -1,5 +1,6 @@
 package edu.bhscs;
 
+import java.util.Scanner;
 
 
 // * */
@@ -18,6 +19,7 @@ public class Player {
     this.accomplishments += amount;
     System.out.println(this.name + " has accomplished " + this.accomplishments + " things!");
   }
+<<<<<<< HEAD
 
   public void answerQuestions() {
     System.out.println(name + ", what's your question?");
@@ -29,6 +31,6 @@ public class Player {
     System.out.println(question);
     return;
   }
+=======
+>>>>>>> 7bf7eb8 (Testing)
 }
-
-

@@ -2,7 +2,7 @@ package edu.bhscs;
 
 public class Cake {
 
-//PROPERTIES AND FIELDS
+  // PROPERTIES AND FIELDS
   String ingredient1;
   String ingredient2;
   String person;
@@ -11,9 +11,10 @@ public class Cake {
   int weight;
   int price;
   int height; // how many rows tall
-  int width;  // How many characters per row
+  int width; // How many characters per row
   int layers; // Stacks of layers
 
+<<<<<<< HEAD
 void centerlength(int tableWidth){
   int cakeWidth = this.width;
   int offset = (cakeWidth - tableWidth) / 2;
@@ -41,8 +42,11 @@ public void draw(Table t){
 
 //CONSTRUCTOR
   public Cake(String string, int i, int j){
+=======
+  // CONSTRUCTOR
+  public Cake() {}
+>>>>>>> 7bf7eb8 (Testing)
 
-  }
   public Cake(String icing, int height, int width, int layers) {
     this.icing = icing;
     this.height = height;
@@ -50,34 +54,32 @@ public void draw(Table t){
     this.layers = layers;
   }
 
-
-// METHOD
-  void draw(){
+  // METHOD
+  void draw() {
     // Top if icing layer
     System.out.println("");
     // This is a loop for each layer
     for (int l = 0; l < layers; l++) {
-      //drawing columns for this layer
-      for(int i = 0; i < height; i++) {
-        //drawing rows for this layer
-        for (int j = 0; j < width; j++){
-          //Randomly puts sprinkles to add texture
+      // drawing columns for this layer
+      for (int i = 0; i < height; i++) {
+        // drawing rows for this layer
+        for (int j = 0; j < width; j++) {
+          // Randomly puts sprinkles to add texture
           double rand = Math.random();
           char sprinkle = rand < 0.333 ? '#' : (rand < 0.666 ? '*' : '=');
           System.out.print(sprinkle);
         }
-        System.out.println(); //Next row
-
+        System.out.println(); // Next row
       }
 
+      if (l < layers - 1) {
+        System.out.println("-".repeat(width));
+      }
 
-    if ( l < layers - 1) {
-      System.out.println("-".repeat(width));
+      System.out.println("=".repeat(width));
     }
-
-    System.out.println("=".repeat(width));
-
   }
+<<<<<<< HEAD
 
 
 
@@ -87,6 +89,15 @@ public void draw(Table t){
 
 }
 
+=======
+
+  public static void main(String[] args) {
+    Cake myCake = new Cake("~", 5, 20, 3);
+    myCake.draw();
+  }
+
+  // * */
+>>>>>>> 7bf7eb8 (Testing)
 
   public Cake(String ingredient, Flour flour) {
     System.out.println(
@@ -121,9 +132,19 @@ public void draw(Table t){
   public String getType() {
     return this.ingredient1;
   }
+<<<<<<< HEAD
 }
 
   // removed duplicate draw(Table) to avoid duplicate method definition;
   // use the other draw(Table) implementation above which calls t.draw().
 
 //*
+=======
+
+  public void draw(Table t) {
+    this.draw();
+  }
+}
+
+// *
+>>>>>>> 7bf7eb8 (Testing)

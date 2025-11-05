@@ -23,7 +23,10 @@ package edu.bhscs;
 public class Main {
   public static void main(String[] args) {
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7bf7eb8 (Testing)
     System.out.println();
     System.out.println("Hello hello");
     System.out.println();
@@ -33,51 +36,48 @@ public class Main {
   // Because it is global, it should be in capital letters
 }
 
-
-
-
     // This is where I create a Cake object along with its flavor/ingrediet and person
     /*Cake cake = new Cake("vanilla", "flour");
-    cake.addIngredient("vanilla");
-    cake.showIngredients();
+        cake.addIngredient("vanilla");
+        cake.showIngredients();
 
-    // Static method
-    String myString = pushup("Garlic");
-    System.out.println(myString);
+        // Static method
+        String myString = pushup("Garlic");
+        System.out.println(myString);
 
-    // Make the baker and bake the cake
-    Baker myBaker = new Baker();
-    myBaker.bakeCake();
+        // Make the baker and bake the cake
+        Baker myBaker = new Baker();
+        myBaker.bakeCake();
 
-    Cake theOneBestCake = new Cake("chocolate", new Flour("the purpose of all"));
-    theOneBestCake.ingredient = "chocolate";
+        Cake theOneBestCake = new Cake("chocolate", new Flour("the purpose of all"));
+        theOneBestCake.ingredient = "chocolate";
 
-    // Make the customer and PTSA
-    Customer customer = new Customer("Ayaan", 50);
-    PTSA ptsa = new PTSA();
+        // Make the customer and PTSA
+        Customer customer = new Customer("Ayaan", 50);
+        PTSA ptsa = new PTSA();
 
-    // The customr buys the cake for a bargain of 10 bucks!
-    customer.buyCake(theOneBestCake, ptsa, 10);
+        // The customr buys the cake for a bargain of 10 bucks!
+        customer.buyCake(theOneBestCake, ptsa, 10);
 
-    // Cake is getting eaten and losing weight
-    theOneBestCake.eaten();
-    System.out.println("The cake weight after some bites of it is: " + theOneBestCake.getWeight());
+        // Cake is getting eaten and losing weight
+        theOneBestCake.eaten();
+        System.out.println("The cake weight after some bites of it is: " + theOneBestCake.getWeight());
 
-    theOneBestCake.eaten();
-    System.out.println(
-        "The cake weight after some more bites of it is: " + theOneBestCake.getWeight());
-    System.out.println("The PTSA funds after the cake sale is: " + ptsa.getFunds());
-  }
+        theOneBestCake.eaten();
+        System.out.println(
+            "The cake weight after some more bites of it is: " + theOneBestCake.getWeight());
+        System.out.println("The PTSA funds after the cake sale is: " + ptsa.getFunds());
+      }
 
-  public static String pushup(String s) {
-    return s;
-  }
+      public static String pushup(String s) {
+        return s;
+      }
 
-  public void draw() {
-    System.out.println("~~~~~~~~");
-    System.out.println("--------");
-    System.out.println("========");
-    System.out.println("~~~~~~~~");
-  }
-}
-*/
+      public void draw() {
+        System.out.println("~~~~~~~~");
+        System.out.println("--------");
+        System.out.println("========");
+        System.out.println("~~~~~~~~");
+      }
+    }
+    */

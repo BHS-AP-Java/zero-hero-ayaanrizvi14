@@ -17,13 +17,9 @@ public class Burger {
   int weight;
   int price;
 
-
-
-
-  //CONSTRUCTOR
+  // CONSTRUCTOR
   public Burger(String type) {
     this.type = type;
-
   }
 
   // METHODS
@@ -32,5 +28,5 @@ public class Burger {
     for (int i = 0; i < 10; i++) {
       System.out.println("-------");
     }
- }
+  }
 }

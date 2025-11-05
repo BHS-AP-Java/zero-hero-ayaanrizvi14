@@ -10,20 +10,24 @@ public class Baker {
   int cash;
   int bakes;
 
+<<<<<<< HEAD
 
     // Baker class implementation
 
+=======
+>>>>>>> 7bf7eb8 (Testing)
   // CONSTRUCTOR
-  public Baker(String name){
+  public Baker(String name) {
     this.name = name;
   }
+
   public Baker(Player p) {
     this.p = p;
   }
 
-  public Baker() {
+  public Baker() {}
 
-  }
+  Baker bob = new Baker("Bob");
 
   // METHODS
   void takeOrder(int price, Customer c) {
@@ -31,19 +35,19 @@ public class Baker {
     c.takeCake(bakeCake());
   }
 
-  public void learn(int amount){
+  public void learn(int amount) {
     this.skill += amount;
-    //Make the baker skill level effect the quality of the cake
-    //Make a bad baker make bad cakes
-    //Make a good baker make good cakes
-    //Make a great baker make great cakes
-    //Make a master baker make masterful cakes
+    // Make the baker skill level effect the quality of the cake
+    // Make a bad baker make bad cakes
+    // Make a good baker make good cakes
+    // Make a great baker make great cakes
+    // Make a master baker make masterful cakes
     this.p.accomplish(amount);
-
   }
+
   Cake bakeCake() {
     String answer = this.p.giveAnswer("what cake do you you want?");
-    this.skill ++;
+    this.skill++;
     return new Cake(answer, this.f);
   }
 
@@ -54,7 +58,8 @@ public class Baker {
       System.out.println(this.name + " now works at " + bakery.getName());
     }
   }
-  Cake bakes(int size, String who){
+
+  Cake bakes(int size, String who) {
     return new Cake(size, who);
   }
 }
