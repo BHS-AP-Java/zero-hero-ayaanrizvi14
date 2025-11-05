@@ -11,6 +11,8 @@ public class Baker {
   int bakes;
 
 
+    // Baker class implementation
+
   // CONSTRUCTOR
   public Baker(String name){
     this.name = name;
@@ -47,6 +49,10 @@ public class Baker {
       this.placeOfWork = bakery;
       System.out.println(this.name + " now works at " + bakery.getName());
     }
+  private String giveAnswer(String string) {
+    return string;
+
+  }
   public Baker(){
   }
   Cake bakes(int size, String Who){

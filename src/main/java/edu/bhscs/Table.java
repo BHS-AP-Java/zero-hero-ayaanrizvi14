@@ -20,9 +20,9 @@ public class Table {
   String theWidth;
 
   // Constructor
-  public Table(int legs, int width) {
+  public Table(int legs, int theWidth) {
     this.legs = legs;
-    this.width = width;
+    this.width = theWidth;
     System.out.println("TABLE IS ALIVEEEE");
   }
 
@@ -50,6 +50,9 @@ public class Table {
 
     }
   }
+
+  public void draw() {
+
 
   // need loops for both of these
 

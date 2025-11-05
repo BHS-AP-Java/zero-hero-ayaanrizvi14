@@ -40,7 +40,7 @@ public void draw(Table t){
 
 
 //CONSTRUCTOR
-  public Cake(){
+  public Cake(String string, int i, int j){
 
   }
   public Cake(String icing, int height, int width, int layers) {
@@ -121,6 +121,7 @@ public void draw(Table t){
   public String getType() {
     return this.ingredient1;
   }
+}
 
   // removed duplicate draw(Table) to avoid duplicate method definition;
   // use the other draw(Table) implementation above which calls t.draw().
