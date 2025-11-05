@@ -57,4 +57,5 @@ public class Table {
   // need loops for both of these
 
   // Methods
+  }
 }
