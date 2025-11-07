@@ -1,12 +1,10 @@
 package edu.bhscs;
 
 public class Table {
-  //Fields and properties
+  // Fields and properties
 
+  // Constructor
 
-  //Constructor
+  // Methods
 
-
-  //Methods
-  
 }
